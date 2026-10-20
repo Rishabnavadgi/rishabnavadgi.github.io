@@ -1,0 +1,15 @@
+{
+  "name": "rishab-navadgi-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Engineering portfolio site. Static HTML generated from src/content.mjs, no runtime dependencies.",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "node src/build.mjs",
+    "build:public": "HIDE_PLACEHOLDERS=1 node src/build.mjs",
+    "check": "node src/check.mjs",
+    "serve": "node src/serve.mjs",
+    "dev": "node src/build.mjs && node src/serve.mjs"
+  }
+}
